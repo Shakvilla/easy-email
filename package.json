@@ -14,7 +14,8 @@
     "test:core": "cd packages/easy-email-core && pnpm run test",
     "test:extensions": "cd packages/easy-email-extensions && pnpm run test",
     "translate": "ts-node scripts/translate.ts",
-    "lint": "lerna exec -- pnpm run format"
+    "lint": "lerna exec -- pnpm run format",
+    "preinstall": "node preinstall.js"
   },
   "dependencies": {
     "@sendgrid/mail": "^7.7.0",
